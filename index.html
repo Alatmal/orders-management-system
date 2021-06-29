@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script type='module' src="app.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"
+  />
+</head>
+<body> 
+    <header>
+        <nav>
+            <h2>Order Tracking Management</h2>
+            <ul class="filter-option">
+                <li class="all-orders">All</li>
+                <li class="unshipped-orders">Waiting to be shipped</li>
+                <li class="in-transit-orders">In Transit</li>
+                <li class="delivered-orders">Delivered</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="input-container">
+        <button type="submit" class="add-button">
+        <i class="fas fa-boxes"></i>
+        Add new order
+        </button>
+        <form class="form-input">
+            <input type="text" name="input-number" id="input-number" placeholder="Tracking Number">
+            <input type="text" name="customer" id="customer-name" placeholder="Name">
+            <input type="text" name="address" id="address" placeholder="Country, address">
+            <input type="text" name="carrier" id="carrier" placeholder="Shipping Agent">
+            <button type="submit" class="submit-input">
+                <i class="fas fa-plus-square"></i>
+            </button>
+        </form>
+    </div>
+    <div class="orders-container">
+        <!--
+            Structure of each order 
+        <div class="order">
+            <div class="customer"><i class="fas fa-user"></i><span class="customer-name">Juan</span></div>
+            <div class="parcel-info"><span class="tracking">1238148945</span><span class="shipping-agent">UPS<i class="fas fa-warehouse"></i></span></div>
+            <div class="location"> 
+                <div class="country"><p>Country: </p><span class="country">Spain</span></div>
+                <div class="address"><p>Address: </p><span class="address">Calle La Hostia</span></div>
+            </div>
+            <div class="status">
+                <button type="submit" class="unshipped">
+                    <i class="fas fa-pallet"></i>
+                    Unshipped
+                </button>
+                <button type="submit" class="in-transit">
+                    <i class="fas fa-truck"></i>
+                    In-transit
+                </button>
+                <button type="submit" class="delivered">
+                    <i class="fas fa-clipboard-check"></i>
+                    Delivered
+                </button>
+            </div>
+        </div>
+        -->
+    </div>
+    
+</body>
+</html>

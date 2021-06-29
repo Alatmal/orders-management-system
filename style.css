@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono&display=swap');
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;*/
+
+*, body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg, #364F68 0%, #33506C 100%);
+    height: 100vh;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', sans-serif;
+
+
+}
+/*HEADER*/
+
+
+header{
+    background-color: #0B1F32;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header nav h2{
+    text-align: center;
+}
+ul.filter-option{
+    display: flex;
+    align-items: stretch; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filter-option li{
+    margin: 5px 30px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.filter-option li:hover{
+    font-weight: bold;
+}
+
+
+/*HEADER*/
+
+
+
+/* INPUT FORM */
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*apply grid for this container*/
+.input-container form{
+    margin-top: 10px;
+    display: none;
+    grid-column-gap: 5px;
+    grid-template-columns: 2fr 2fr;
+    min-width: 300px;
+    
+}
+
+.input-container input{
+    border: none;
+    min-width: 15vw;
+    min-height: 2vh;
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+#address, #carrier{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.submit-input{
+    font-size: 1.2rem;
+    color:rgb(124, 124, 245);
+    grid-column: 1/-1;
+}
+
+.add-button{
+    height: 2em;
+    width: 10em;
+    margin-top: 10px;
+    display: block;
+    background: whitesmoke;
+    color: rgb(124, 124, 245);
+    font-size: 2rem;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.add-button:hover, .add-button:active{
+    color: whitesmoke;
+    background: rgb(124, 124, 245);
+}
+
+/* INPUT FORM */
+
+
+/* ORDERS SECTION */
+
+.orders-container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    justify-content: center;
+    margin: 20px 40px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.order{
+    background: 
+     linear-gradient(whitesmoke,whitesmoke) padding-box, /*this is your grey background*/
+     linear-gradient(to right, #2073aa, #7c7cf5) border-box;
+    padding:10px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    height: 200px;
+    background-color:whitesmoke;
+    color: rgb(124, 124, 245);
+    
+}
+
+.customer{
+    font-size: 1.3em;
+}
+.parcel-info{
+    margin-top: 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 240, 209);
+}
+
+.location {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.status{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.status button{
+    min-height: 30px;
+    border: none;
+}
+
+.unshipped{
+    width: 8em;
+    color:rgb(255, 135, 113);
+    background: rgb(255, 247, 232);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.unshipped:hover, .unshipped:active{
+    width: 8.5em;
+    color: rgb(255, 247, 232);
+    background: rgb(255, 135, 113);
+}
+
+.in-transit{
+    width: 8em;
+    color: rgb(87, 226, 215);
+    background: rgb(255, 247, 232);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.in-transit:hover, .in-transit:active{
+    width: 8.5em;
+    background: rgb(87, 226, 215);
+    color: rgb(255, 247, 232);
+}
+
+.delivered{
+    width: 8em;
+    color: greenyellow;
+    background: rgb(255, 247, 232);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.delivered:hover, .delivered:active{
+    width: 8.5em;
+    background: greenyellow;
+    color: rgb(255, 247, 232);
+}
+
+.fa-pallet, .fa-truck, .fa-clipboard-check{
+    pointer-events: none;
+}
+
+/* ORDERS SECTION */
